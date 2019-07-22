@@ -16,7 +16,7 @@ class Accordion extends React.Component {
         
         return this.props.sections.map((section, index) => (
             <li>
-                <button key={index} onClick={this.handleButtonClick(index)}>{section.title}</button>
+                <button key={index} onClick={() => this.handleButtonClick(index)}>{section.title}</button>
             </li>
         ))
     }
